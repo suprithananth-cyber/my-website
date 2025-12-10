@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaWave — Digital Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-animate>
+      <div class="brand">
+        <div class="logo">NW</div>
+        <div>
+          <p class="eyebrow">NovaWave Studio</p>
+          <p class="tagline">Human-centered digital products</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="ghost-button" data-scroll="#contact">Let's talk</button>
+    </header>
+
+    <main>
+      <section id="hero" class="hero" data-animate>
+        <div class="hero-content">
+          <p class="eyebrow">Trusted by ambitious teams</p>
+          <h1>
+            We craft modern websites that convert visitors into loyal customers.
+          </h1>
+          <p class="subtext">
+            Strategy, design, and engineering working together to ship stunning
+            experiences. Launch faster and stay ahead with NovaWave.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" data-scroll="#contact">
+              Start a project
+            </button>
+            <button class="secondary-button" data-scroll="#features">
+              Explore features
+            </button>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="stat">
+            <p class="stat-label">Avg. lift</p>
+            <p class="stat-value">+38%</p>
+          </div>
+          <div class="stat">
+            <p class="stat-label">Launch time</p>
+            <p class="stat-value">4 weeks</p>
+          </div>
+          <div class="stat">
+            <p class="stat-label">Satisfaction</p>
+            <p class="stat-value">4.9/5</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features" data-animate>
+        <div class="section-heading">
+          <p class="eyebrow">What we deliver</p>
+          <h2>End-to-end services to keep you moving</h2>
+          <p>
+            Modular workflows and transparent communication so you always know
+            where your project stands.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Performance first</h3>
+            <p>
+              Lighthouse-optimized builds, smart image delivery, and modern
+              tooling to keep your experience blazing fast.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🎨</div>
+            <h3>Premium design</h3>
+            <p>
+              Bespoke visuals rooted in your brand system, paired with clear
+              storytelling that resonates.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🤝</div>
+            <h3>Collaborative process</h3>
+            <p>
+              Async updates, shared dashboards, and weekly reviews keep every
+              stakeholder aligned.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🛡️</div>
+            <h3>Future proof</h3>
+            <p>
+              Scalable architecture, CMS integration, and automated testing mean
+              your site grows with you.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about" data-animate>
+        <div class="about-content">
+          <p class="eyebrow">About us</p>
+          <h2>Small team, big impact</h2>
+          <p>
+            We're a distributed crew of strategists, designers, and engineers
+            building the next generation of digital experiences. Think of us as
+            an embedded squad dedicated to your success.
+          </p>
+          <ul>
+            <li>Workshops to uncover opportunities</li>
+            <li>Clear milestones + shared playbooks</li>
+            <li>Ongoing optimization after launch</li>
+          </ul>
+        </div>
+        <div class="about-panel" aria-hidden="true">
+          <div class="badge">
+            <span>12+</span>
+            <p>industries served</p>
+          </div>
+          <div class="badge">
+            <span>6</span>
+            <p>core experts</p>
+          </div>
+          <div class="badge">
+            <span>120</span>
+            <p>projects shipped</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" data-animate>
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Tell us about your next big idea</h2>
+          <p>Share a few details and we'll reach out within one business day.</p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Alex Lee" required />
+          </label>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </label>
+          <label>
+            Budget range
+            <select name="budget" required>
+              <option value="">Select an option</option>
+              <option value="under-10">Under $10k</option>
+              <option value="10-25">$10k – $25k</option>
+              <option value="25-50">$25k – $50k</option>
+              <option value="50+">$50k+</option>
+            </select>
+          </label>
+          <label>
+            Project details
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Timeline, goals, links, etc."
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="primary-button">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-animate>
+      <p>© <span id="year"></span> NovaWave Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top</a>
+        <a href="mailto:hello@novawave.studio">hello@novawave.studio</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
