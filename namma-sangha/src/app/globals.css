@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --color-brand-deep: #0f3d5f;
+  --color-brand-sky: #1c5a8e;
+  --color-brand-sunrise: #f97316;
+  --color-brand-cream: #fff8ef;
+  --color-brand-sand: #f5e4cf;
+  --color-brand-ink: #0f172a;
+}
+
+body {
+  font-family: var(--font-inter), "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #fffdf7 10%, var(--color-brand-cream));
+  color: var(--color-brand-ink);
+  min-height: 100vh;
+}
+
+main {
+  padding-inline: 1rem;
+  padding-block: 2rem 3rem;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-brand-ink);
+    font-weight: 600;
+  }
+
+  section {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-block: 3rem;
+  }
+}
+
+@layer utilities {
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-1 text-sm font-medium;
+  }
+
+  .card {
+    @apply rounded-3xl border border-black/5 bg-white/90 p-6 shadow-sm shadow-slate-200/70;
+  }
+}
